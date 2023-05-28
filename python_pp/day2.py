@@ -1,3 +1,6 @@
+
+#Exercise 1
+
 # Column
 # Name, 5 sub mark
 # Avg venum aparm etho oru sub > 35 iruntha result fail varum ilana pass
@@ -45,3 +48,5 @@ print(df_records)
 #  {'id': 2, 'name': 'suresh', 'subject': {'tamil': 87, 'english': 25, 'maths': 87, 'science': 54, 'social': 32}, 'average': 'fail'},
 #  {'id': 3, 'name': 'sylesh', 'subject': {'tamil': 53, 'english': 25, 'maths': 87, 'science': 89, 'social': 87}, 'average': 68.2},
 #  {'id': 4, 'name': 'vignesh', 'subject': {'tamil': 47, 'english': 74, 'maths': 87, 'science': 98, 'social': 97}, 'average': 80.6}]
+
+
