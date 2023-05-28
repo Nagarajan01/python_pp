@@ -17,11 +17,14 @@ data_2 = [[1, "naga", "20k"], [2, "venkat", "23k"], [3, "bala", "23k"], [4, "kan
 df_age = pd.DataFrame(data_1, columns=['id', 'name', 'age'])
 df_salary = pd.DataFrame(data_2, columns=['id', 'name', 'salary'])
 
-print(df_age.merge(df_salary, left_on = 'id', right_on = 'id'))
+# print(df_age.merge(df_salary, left_on = 'id', right_on = 'id'))
 
 
 df_age = df_age.to_dict()
-df_salary = df_salary.to_dict()
+df_salary = df_salary.to_dict('records')
+
+print(df_salary, "df to dict")
+
 
 df_new_salary = {}
 df_new_salary['age'] = {}
@@ -38,7 +41,7 @@ df_salary['age']=df_new_salary
 
 df_salary = pd.DataFrame(df_salary, columns=['id', 'name', 'salary', 'age'], index = [0, 1, 2, 3])
 
-print(df_salary)
+# print(df_salary)
 
 #output
             #     id    name salary   age
